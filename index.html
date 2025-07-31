@@ -1,0 +1,110 @@
+  <!DOCTYPE html>
+  <html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>LaBioCAD</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/jpg" href="auxl/Icons/dna icon.png">
+    <style>
+      html {scroll-behavior: smooth;}
+      @font-face{font-family: 'Aerospace';src: url(auxl/Fontsweb/Aerospace.ttf);}
+      @font-face{font-family: 'Bilbo';src: url(auxl/Fontsweb/BilboINC.ttf);}
+      @font-face{font-family: 'Sudbury';src: url(auxl/Fontsweb/Sudbury\ Basin.otf);}
+      @font-face{font-family: 'Druk';src: url(auxl/Fontsweb/Druk-Medium-Trial.otf);}
+      * { margin: 0; padding: 0; box-sizing: border-box; }
+      @keyframes anmdireita {from{transform: translateX(500px)}}
+      @keyframes anmesquerda {from{transform: translateX(-500px)}}
+      body { height: 100vh; font-family: 'Poppins', sans-serif;overflow: hidden; }
+      .topo { background: linear-gradient(#26d850,#28a745); color: white; padding: 15px; text-align: center; font-weight: bold; }
+      .container { display: flex; height: calc(100vh - 60px); }
+      .esquerda, .direita { flex: 1; padding: 20px; color: lightgoldenrodyellow; }
+      .esquerda {background-image: url(Imagens/tecbg.jpg);background-repeat: no-repeat;background-size: cover;}
+      .direita {flex: 1;background: black; position:relative;overflow: hidden;}
+      .imagemfull{width: 100%;height: 100%;object-fit: cover;object-position: center; position: absolute;top: 0;left: 0;}
+      a {
+      color: rgb(255, 255, 255);
+      text-decoration: none;
+      font-size: 18px;
+      margin: 14px 0;
+      width: 200px;
+      padding: 12px 20px;
+      border-radius: 8px;
+      display: block;
+      background-color: rgba(0, 0, 0, 0.3);
+      transition: all 0.3s ease;
+    }
+
+    a:hover {
+      background-color: rgba(0, 0, 0, 0.6);
+      color: white;}
+
+      </style>  
+  </head>
+
+    <body>
+    <div class="topo">
+    <span style="font-family: 'Aerospace';font-size: 42px; letter-spacing: -1px; margin-right: -2px;">La</span>
+    <span style="font-family: 'Bilbo'; font-size: 48px;letter-spacing: -2px;margin-right: -2px;">Bio</span>
+    <span style="font-family: 'Sudbury';font-size: 42px;letter-spacing: -1px;">Cad</span>
+  </div>
+
+    <div class="container">
+    <div class="esquerda">
+    <nav style="display: flex;flex-direction: column;margin-top: 30px;">
+    <a href="artigos.html" style="animation-name: anmesquerda; animation-duration: 1s; animation-fill-mode: forwards; animation-delay: 0.2s;">Artigos</a>
+    <a href="Equipe.html" style="animation-name: anmesquerda; animation-duration: 1s; animation-fill-mode: forwards; animation-delay: 0.4s; ">Equipe</a>
+    <a href="Sobre.html" style="animation-name: anmesquerda; animation-duration: 1s; animation-fill-mode: forwards; animation-delay: 0.6s; ;">Sobre</a>
+    
+    <p 
+    style="color: rgb(255, 255, 255);
+      text-decoration: none;
+      font-size: 16px;
+      margin: 14px 0;
+      width: 400px;
+      padding: 12px 20px;
+      border-radius: 8px;
+      display: block;
+      background-color: rgba(0, 0, 0, 0.3);
+      transition: all 0.3s ease;animation-name: anmesquerda; animation-duration: 1s; animation-fill-mode: forwards; animation-delay: 0.8s;text-align: justify;"
+      >A Computação de Alto Desempenho (HPC), também conhecida como supercomputação, refere-se à prática de utilizar um conjunto de computadores para processar tarefas complexas que exigiriam muito tempo ou poder de processamento para um único computador
+    </p>
+
+  </nav>
+  </div>
+      
+      
+  <div class="direita">
+    <img src="Imagens/bgdna.jpeg" class="imagemfull" style="transform: scale(-1,1);">
+
+    <div style="
+      position: absolute;
+      top: 70px;
+      right: 100px;
+      width: 300px;
+      background-color: rgba(255, 255, 255, 0.95);
+      padding: 20px;
+      border-radius: 8px;
+      font-size: 15px;
+      color: black;animation-name: anmdireita;animation-duration: 0.8s;" >
+      <h4>Bioinformática:</h4>
+      <p style="text-align: justify;">
+        a área interdisciplinar que combina biologia, ciência da computação e matemática para analisar, interpretar e gerenciar dados biológicos em larga escala, especialmente dados genômicos e moleculares
+      </p>
+
+      
+    
+    </div>
+  </div>
+    
+    
+
+  </body>
+
+
+
+
+
+
+  </html>   
+  
